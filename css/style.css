@@ -1,0 +1,186 @@
+body {
+   background-image: url(../background.jpg);
+   background-position: 100%;
+   background-size: cover;
+   background-attachment: fixed;
+   scroll-margin-top: 100vh;
+}
+
+.search-header {
+   color: aliceblue;
+   font-weight: 100;
+   font-size: 40px;
+}
+
+.spinner-block {
+   padding-top: 25px;
+   text-align: center;
+   align-self: center;
+   justify-self: center;
+   display: none;
+}
+
+#fullBackground {
+   background-color: rgba(75, 103, 128, 0.473);
+}
+
+#searchBtn {
+   background-color: rgb(221, 59, 65);
+   color: #fcfafa;
+   font-size: 20px;
+}
+
+.my-form {
+   background-color: rgba(72, 74, 79, 0.963);
+   color: rgb(187, 223, 255);
+   transition: .5s;
+}
+
+.my-form:hover {
+   transition: .5s;
+   -webkit-box-shadow: 5px 3px 27px 5px #000000;
+   box-shadow: 5px 3px 27px 5px #000000;
+}
+
+.one-movie:hover {
+   transition: .5s;
+   -webkit-box-shadow: 5px 3px 27px 5px #000000;
+   box-shadow: 5px 3px 27px 5px #000000;
+}
+
+#moviesOutput {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.movie-block {
+   padding: 20px;
+}
+
+.btnDetails {
+   align-self: flex-start;
+   background-color: rgb(43, 43, 67);
+}
+
+.one-movie {
+   background-color: rgba(255, 255, 255, 0.767);
+   border-radius: 8px;
+   padding: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   transition: .5s;
+}
+
+.one-movie-active {
+   background-color: rgba(255, 255, 255, 0.986);
+}
+
+.header {
+   text-align: center;
+   color: rgb(255, 246, 240);
+   font-size: 40px;
+}
+
+.poster {
+   height: 200px;
+   max-width: 200px;
+   border-radius: 8px;
+}
+
+.movie-desc {
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.my-pagination-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.my-pagination-container li a {
+   color: #000000;
+   margin: 10px;
+}
+
+.my-active {
+   background-color: rgb(107, 107, 112);
+   /* border-radius: 8px; */
+   padding: 9px;
+}
+
+.my-pagination-container .my-active a {
+   color: aliceblue;
+   font-size: 20px;
+}
+
+.my-pagination {
+   border-radius: 8px;
+   background-color: rgba(240, 248, 255, 0.76);
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   text-align: center;
+   /* padding: 10px; */
+   margin: 10px;
+   padding-left: 0;
+}
+
+.my-pagination li a {
+   text-decoration: none;
+   padding: 5px;
+}
+
+#fullInfo {
+   width: 100%;
+
+}
+
+#tableInfo {
+   width: 100%;
+   margin: 10px;
+}
+
+.my-td {
+   padding: 5px;
+   font-size: 20px;
+   color: rgb(79, 9, 9);
+}
+
+.my-tr {
+   border-bottom: 1px solid rgb(213, 212, 212);
+}
+
+
+.dynamic-spinner-btn {
+   display: flex;
+   flex-direction: column;
+   align-self: flex-end;
+}
+
+.dynamic-spinner-btn div {
+   margin: 25px;
+   color: #131740;
+}
+
+#errOutput {
+   display: none;
+}
+
+#error {
+   text-align: center;
+   padding-top: 20px;
+   font-size: 30px;
+
+}
+
+@media(max-width: 1000px) {
+   .one-movie-active {
+      display: flex;
+      flex-direction: column;
+   }
+}
