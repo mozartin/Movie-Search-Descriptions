@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+   font-family: 'Playfair Display', serif;
+}
+
 body {
    background-image: url(../background.jpg);
    background-position: 100%;
